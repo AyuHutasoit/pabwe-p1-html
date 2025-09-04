@@ -6,14 +6,35 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            background: #f8f8f8;
+            margin: 0;
+            padding: 0;
         }
         h1 {
             text-align: center;
+            margin-top: 24px;
+            color: #333;
+        }
+        .table-container {
+            max-width: 100vw;
+            overflow-x: auto;
+            margin: 20px auto;
+            background: #fff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            border-radius: 8px;
+            padding: 16px;
         }
         table {
             border-collapse: collapse;
             width: 100%;
-            margin: 20px auto;
+            min-width: 1200px;
+            background: #fff;
+        }
+        caption {
+            caption-side: top;
+            font-size: 1.1em;
+            margin-bottom: 8px;
+            color: #555;
         }
         th, td {
             border: 1px solid #888;
@@ -21,7 +42,8 @@
             text-align: center;
         }
         thead th {
-            background-color: #f2f2f2;
+            background-color: #e8eaf6;
+            color: #222;
         }
         tfoot td {
             background-color: #e0e0e0;
@@ -30,10 +52,16 @@
         tr:nth-child(even) td {
             background-color: #fafafa;
         }
+        tr:hover td {
+            background-color: #ffe0b2;
+        }
         td[colspan] {
             text-align: right;
         }
         @media (max-width: 900px) {
+            .table-container {
+                padding: 4px;
+            }
             table, thead, tbody, tfoot, th, td, tr {
                 font-size: 12px;
             }
@@ -42,7 +70,9 @@
 </head>
 <body>
     <h1>Tabel Perolehan Nilai</h1>
+    <div class="table-container">
     <table>
+        <caption>Daftar Nilai Mahasiswa Kelas 11IF1</caption>
         <thead>
             <tr>
                 <th rowspan="3">No</th>
@@ -115,8 +145,6 @@
         </thead>
         <tbody>
             <!-- Data Mahasiswa -->
-            <!-- ... (data rows, copy as is from your original code, but remove align="center") ... -->
-            <!-- Example for first row: -->
             <tr>
                 <td>1</td>
                 <td>11S2400</td>
@@ -130,34 +158,6 @@
                 <td>0</td>
                 <td>0</td>
                 <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <!-- Copy the rest of the rows as in your original code -->
-        </tbody>
-        <tfoot>
-            <tr>
-                <td colspan="6" style="text-align:right;"><b>Rata-Rata</b></td>
-            <td align="center">0</td>
-            <td align="center">0</td>                
-            <td align="center">0</td>
             <td align="center">0</td>
             <td align="center">0</td>
             <td align="center">0</td>
