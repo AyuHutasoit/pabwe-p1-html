@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <title>Detail Blog</title>
+</head>
+<body>
+  <!-- Tombol kembali ke halaman Blog -->
+  <nav>
+    <a href="blog.html">&larr; Kembali ke Blog</a>
+  </nav>
+
+  <header>
+    <h1>Belajar HTML Dasar Tanpa CSS &amp; JS</h1>
+    <img src="/assets/Foto lagi.jpg" alt="Cover Blog" width="600" />
+    <section aria-label="Info penulis">
+      <img src="assets/foto kesekian.png" alt="Foto Author" width="48" height="48" />
+      <strong>Oleh:</strong> Ayu Hutasoit
+      <span> | </span>
+      <time datetime="2025-09-01">1 September 2025</time>
+    </section>
+
+    <section aria-label="Label">
+      <strong>Label:</strong>
+      <ul>
+        <li>HTML</li>
+        <li>Pemula</li>
+        <li>Tanpa CSS</li>
+      </ul>
+    </section>
+  </header>
+
+  <main>
+    <article>
+      <h2>Deskripsi</h2>
+      <p>
+        Artikel ini membahas struktur minimal sebuah berkas HTML, penggunaan elemen
+        semantik seperti <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;article&gt;</code>, dan
+        <code>&lt;footer&gt;</code>, serta contoh formulir dan tabel dasar.
+      </p>
+    </article>
+
+    <section aria-label="Form Komentar">
+      <h2>Tinggalkan Komentar</h2>
+      <form action="#" method="post">
+        <p>
+          <label for="nama">Nama</label><br />
+          <input id="nama" name="nama" type="text" required />
+        </p>
+        <p>
+          <label for="komentar">Komentar</label><br />
+          <textarea id="komentar" name="komentar" rows="4" cols="40" required></textarea>
+        </p>
+        <p>
+          <button type="reset">Reset</button>
+          <button type="submit">Kirim</button>
+        </p>
+      </form>
+    </section>
+
+    <section aria-label="Daftar Komentar">
+      <h2>Komentar</h2>
+
+      <article>
+        <img src="assets/Foto Lagi.png" alt="Foto komentator 1" width="32" height="32" />
+        <strong>Budi</strong>
+        <p>Sangat membantu untuk memahami dasar HTML!</p>
+        <hr />
+      </article>
+
+      <article>
+        <img src="assets/Ayu.jpg" alt="Foto komentator 2" width="32" height="32" />
+        <strong>Intan</strong>
+        <p>Contohnya jelas dan rapi, terima kasih.</p>
+        <hr />
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Blog Sederhana</p>
+  </footer>
+</body>
+</html>
