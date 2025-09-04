@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <title>Tabel Perolehan Nilai</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 32px;
+      background: #f9f9f9;
+    }
+    nav {
+      margin-bottom: 24px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #0077cc;
+      margin-right: 12px;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    table {
+      background: #fff;
+      border-collapse: collapse;
+      width: 100%;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    caption {
+      font-weight: bold;
+      margin-bottom: 8px;
+      font-size: 1.1em;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px 12px;
+      text-align: center;
+    }
+    thead th {
+      background: #e3eafc;
+    }
+    tfoot td {
+      background: #f0f0f0;
+      font-style: italic;
+      text-align: left;
+    }
+    header h1 {
+      margin-bottom: 0;
+    }
+    main {
+      margin-bottom: 32px;
+    }
+    footer {
+      text-align: center;
+      color: #888;
+      font-size: 0.95em;
+      margin-top: 32px;
+    }
+    @media (max-width: 600px) {
+      table, thead, tbody, th, td, tr {
+        display: block;
+      }
+      th, td {
+        text-align: left;
+        padding: 8px;
+      }
+      thead tr {
+        display: none;
+      }
+      tbody tr {
+        margin-bottom: 16px;
+        background: #fff;
+        box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+      }
+      tfoot td {
+        font-size: 0.95em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigasi 4 halaman utama -->
+  <nav>
+    <a href="blog.html">Blog</a>
+    <a href="form-pendaftaran.html">Form Pendaftaran</a>
+    <a href="tabel-nilai.html" aria-current="page"><strong>Tabel Perolehan Nilai</strong></a>
+    <a href="cv.html">Curriculum Vitae</a>
+  </nav>
+
+  <header>
+    <h1>Tabel Perolehan Nilai</h1>
+    <p>(Style diabaikan, fokus pada bentuk tabel)</p>
+  </header>
+
+  <main>
+    <table>
+      <caption>Rekap Nilai Siswa</caption>
+      <thead>
+        <tr>
+          <th rowspan="3">No</th>
+          <th rowspan="3">NIM</th>
+          <th rowspan="3">Nama</th>
+          <th rowspan="3">Program Studi</th>
+          <th rowspan="3">Kelas</th>
+          <th rowspan="2">Bentuk</th>
+          <th rowspan="2">Kuis</th>
+          <th rowspan="2">Proyek</th>
+          <th rewspan="2">Tugas</th>
+          <th rewspan="2">UAS</th>
+          <th rewspan="2">UTS</th>
+          <th rewspan="2">Bentuk</th>
+        </tr>
+        <tr>
+          <th>T1</th>
+          <th>T2</th>
+          <th>T3</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td><td>Budi</td><td>85</td><td>88</td><td>90</td><td>84</td><td>92</td><td>88.2</td><td>A</td>
+        </tr>
+        <tr>
+          <td>2</td><td>Sinta</td><td>78</td><td>80</td><td>82</td><td>79</td><td>85</td><td>80.8</td><td>B</td>
+        </tr>
+        <tr>
+          <td>3</td><td>Raka</td><td>90</td><td>91</td><td>88</td><td>86</td><td>87</td><td>88.4</td><td>A</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="9">Catatan: Nilai Akhir = rata-rata tugas (30%) + UTS (30%) + UAS (40%).</td>
+        </tr>
+      </tfoot>
+    </table>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Rekap Nilai</p>
+  </footer>
+</body>
+</html>
